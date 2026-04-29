@@ -58,10 +58,6 @@ nav a {
   text-decoration: none;
 }
 
-main {
-  /* padding: 40px; */
-}
-
 .hero {
   position: relative;
   background-image: url('/images/home/hero-image.jpeg');
