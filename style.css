@@ -1,0 +1,289 @@
+body {
+  background: #c1ab88;
+  color: #000000;
+  margin: 0px;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: rgb(228, 224, 215);
+  color: #000000;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #222;
+}
+
+
+footer {
+  background: rgb(228, 224, 215);
+  color: #000000;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #222;
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between; /* pushes nav to right */
+  align-items: center;
+  padding: 10px 20px;
+}
+.brand {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand2 {
+  align-items: center;
+  display: flex;
+}
+.site-title {
+  font-size: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+nav {
+  margin-right: 80px;
+}
+nav a {
+  color: rgb(0, 0, 0);
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+main {
+  /* padding: 40px; */
+}
+
+.hero {
+  position: relative;
+  background-image: url('/images/home/hero-image.jpeg');
+  background-size: cover;
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 700px;
+
+  color: rgb(0, 0, 0);
+  padding: 20px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.cropped-img {
+  width: 700px;
+  height: 700px;
+
+  object-fit: cover;        /* fills container, crops excess */
+  object-position: left;    /* keeps left side, crops right */
+}
+
+.cropped-img-acc {
+  width: 700px;
+  height: 400px;
+
+  object-fit: cover;        /* fills container, crops excess */
+  object-position: top;    /* keeps left side, crops right */
+}
+
+.cropped-img-exp-1 {
+  width: 700px;
+  height: 500px;
+
+  object-fit: cover;        /* fills container, crops excess */
+  object-position: top;    /* keeps left side, crops right */
+}
+
+.cropped-img-exp-2 {
+  width: 700px;
+  height: 500px;
+
+  object-fit: cover;        /* fills container, crops excess */
+  object-position: center;    /* keeps left side, crops right */
+}
+
+.cropped-img-exp-3 {
+  width: 500px;
+  height: 500px;
+
+  object-fit: cover;        /* fills container, crops excess */
+  object-position: top;    /* keeps left side, crops right */
+}
+
+.cropped-img-exp-4 {
+  width: 500px;
+  height: 300px;
+
+  object-fit: cover;        /* fills container, crops excess */
+  object-position: top;    /* keeps left side, crops right */
+}
+
+.image-row {
+  display: flex;
+  gap: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  align-items: flex-start;
+  padding-bottom: 100px;
+}
+.image-row img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  transform: translateY(calc(var(--i) * 50px));
+}
+
+h1 {
+  font-size: 60px;
+}
+
+.hero h1 {
+  font-size: 80px;
+  letter-spacing: 3px;
+  text-shadow: 0 0 15px rgba(255, 213, 0, 0.25);
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.7;
+  margin-bottom: 30px;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+.card-pic {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  text-align: center;
+}
+
+.card-1 {
+  position: center;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 100px;
+  overflow: hidden;
+  transition: 0.2s;
+  background: rgba(255, 255, 255, 0.5)
+}
+.card-1-lane {
+  position: center;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+  min-height: 200px;
+  overflow: hidden;
+  transition: 0.2s;
+  background: rgba(255, 255, 255, 0.5)
+}
+
+.card-1 h1 {
+  font-size: 48px;
+}
+.card-1 p {
+  font-size: 20px;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  margin: 40px;
+  text-align: center;
+}
+
+.card-2 {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 200px;
+  overflow: hidden;
+  transition: 0.2s;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.card-2 h1 {
+  font-size: 60px;
+}
+.card-2 h2 {
+  font-size: 32px;
+}
+.card-2 p {
+  font-size: 16px;
+}
+
+
+.quotes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 4fr));
+  gap: 0px;
+  padding: 0px;
+  margin: 0px;
+  text-align: left;
+}
+
+.card-3 {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0px;
+  padding: 20px;
+  min-height: 200px;
+  overflow: hidden;
+  transition: 0.2s;
+  background: rgba(255, 255, 255, 0.3);
+}
+.card-3 p {
+  font-size: 16px;
+}
+
+
+.card-4 {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;  /* horizontal */
+  align-items: center;      /* vertical */
+  text-align: center;
+  border-radius: 10px;
+  padding: 2;
+  min-height: 200px;
+  overflow: hidden;
+  transition: 0.2s;
+  background: rgba(255, 255, 255, 0.3);
+}
+.card-4 h1 {
+  text-align: center;
+}
