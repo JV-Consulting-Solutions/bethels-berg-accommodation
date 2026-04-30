@@ -239,7 +239,11 @@ h1 {
 .card-2 p {
   font-size: 16px;
 }
-
+.card-2 a {
+  color: rgba(0, 0, 0);
+  margin-top: auto;
+  text-decoration: none;
+}
 
 .quotes {
   display: grid;
@@ -282,4 +286,9 @@ h1 {
 }
 .card-4 h1 {
   text-align: center;
+}
+
+i {
+  font-size: 24px;
+  color: #333;
 }
