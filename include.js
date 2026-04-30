@@ -6,6 +6,6 @@ function loadHTML(id, file) {
     });
 }
 
-const SITE_ROOT = "";
+const SITE_ROOT = "/bethels-berg-accommodation/";
 loadHTML("header", "header-footer/header.html");
 loadHTML("footer", "header-footer/footer.html");
