@@ -6,5 +6,5 @@ function loadHTML(id, file) {
     });
 }
 
-loadHTML("header", "header-footer/header.html");
-loadHTML("footer", "header-footer/footer.html");
+loadHTML("header", "header.html");
+loadHTML("footer", "footer.html");
